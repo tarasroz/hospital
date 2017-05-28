@@ -26,7 +26,7 @@
       background-color: #03a6f2; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0; }
 
 .upper {
@@ -35,17 +35,25 @@ body {
 .whitetext {
   color: white; }
 
-.flex {
+.logoflex {
+  width: 285px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center; }
+
+.ulflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 div.topnav {
   display: flex;
-  align-items: cetner;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: auto;
-  font-size: 14px;
-  padding: 0 7%; }
+  font-size: 14px; }
 
 ul {
   list-style: none; }
@@ -74,13 +82,31 @@ button.button {
 button.button:hover {
   box-shadow: 1px 1px 5px grey; }
 
+#logo {
+  width: 35px;
+  height: 41px;
+  margin-right: 5px; }
+
 .companyName {
   margin: 0;
-  width: 234px;
-  font-size: 32px;
+  width: 100%;
+  font-size: 18px;
   font-weight: bold;
   text-align: left;
   color: #03a6f2; }
 
 .text-style-1 {
   color: #999999; }
+
+@media (min-width: 600px) {
+  .companyName {
+    font-size: 24px; } }
+@media (min-width: 900px) {
+  .companyName {
+    font-size: 26px; } }
+@media (min-width: 1200px) {
+  .logoflex {
+    flex-direction: row; }
+
+  .companyName {
+    font-size: 32px; } }

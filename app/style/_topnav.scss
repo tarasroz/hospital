@@ -1,5 +1,5 @@
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: $font;
 	margin: 0;
 }
 
@@ -11,20 +11,31 @@ body{
   color: white;
 }
 
-.flex{
-	display: flex;
-	align-items: center;
+.logoflex{
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ulflex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
 }
 
 div.topnav {
-	display: flex;
-	align-items: cetner;
-	width: 100%;
-	height: auto;
-	font-size: 14px;
-	padding: 0 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
 
 }
+
 ul{
   list-style: none;
 }
@@ -49,7 +60,7 @@ button.button {
   width: 145px;
   height: 45px;
   border-radius: 22.5px;
-  background-color: #00d664;
+  background-color: $green;
   border:0;
   font-weight: bold;
 }
@@ -58,14 +69,50 @@ button.button:hover{
 	box-shadow: 1px 1px 5px grey;
 }
 
+#logo{
+  width: 35px;
+  height: 41px;
+  margin-right: 5px;
+}
+
 .companyName{
   margin: 0;
-  width: 234px;
-  font-size: 32px;
+  width: 100%;
+  font-size: 18px;
   font-weight: bold;
   text-align: left;
-  color: #03a6f2;
+  color: $logoazure;
 }
+
 .text-style-1 {
-  color: #999999; //color of company logo
+  color: $logogrey; //color of company logo
+}
+
+////////////////////////////////////////////////////////
+@media (min-width: $tabletportr){ //for-tablet-portrait-up (>600px)
+
+    .companyName{
+        font-size: 24px;
+      }
+}
+/////////////////////////////////////////////////////////
+@media (min-width: $tabletlands) { //for-tablet-landscape-up (>900px)
+
+  .companyName{
+    font-size: 26px;
+  }
+
+
+}
+/////////////////////////////////////////////////////////
+@media (min-width: $desktopsize) { //for-desktop-up
+  .logoflex{
+    flex-direction: row;
+   }
+
+  .companyName{
+
+    font-size: 32px;
+    }
+
 }
