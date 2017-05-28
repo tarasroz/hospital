@@ -1,0 +1,90 @@
+div.mobapp{
+	width: 100%;
+	height: 645px;
+	background: 
+		url(../img/worldmap-transp.png) center repeat-x, 
+		url(../img/worldmap-dots2.png) right no-repeat;
+
+	display: flex;
+	flex-direction: row;
+	padding-left: 8%;
+}
+
+div.half1{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 50%;
+	border: 1px solid grey;
+}
+
+
+h1.h1{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.04;
+  text-align: left;
+  color: $darkblue;
+}
+
+.content{
+  max-width: 485px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  color: $grey;
+
+}
+
+.bigdata{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  color: $azure;
+
+}
+
+.aflex{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-top: 40px;
+}
+
+
+div.mobile1{
+	padding-right: 25px;
+	border-right: 1px solid $grey;
+
+}
+
+div.mobile2{
+	padding-left: 25px;
+
+
+}
+
+div.appstore{
+	padding-right: 35px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+div.playmarket{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+img.icon{
+	vertical-align: middle;
+}
+
+div.half2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+}
+
+
