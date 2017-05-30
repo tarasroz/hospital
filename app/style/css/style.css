@@ -1,3 +1,56 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .Recent_Blog {
   width: 1170px;
   margin-left: 115px;
@@ -87,18 +140,7 @@
           .Recent_Blog .picture .second .text_guys a:hover {
             text-decoration: underline; }
 
-body {
-  margin: 0; }
-
-p {
-  margin: 0;
-  paddind: 0; }
-
-body, div, h1, h2, p {
-  box-sizing: border-box; }
-
 .top-bar {
-  width: 100%;
   height: 52px;
   display: -webkit-flex;
   display: flex;
@@ -107,15 +149,15 @@ body, div, h1, h2, p {
   justify-content: space-between;
   align-content: space-around;
   background-color: #303030;
-  font-family: Arial;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: left;
-  padding: 0% 8.5%; }
+  padding: 2% 5% 2% 8.5%; }
   .top-bar a {
     margin-right: 4.5%;
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left; }
     .top-bar a:last-child {
       margin-left: auto; }
     .top-bar a:hover {
@@ -123,6 +165,9 @@ body, div, h1, h2, p {
     .top-bar a:active {
       color: #ffffff;
       background-color: #03a6f2; }
+    .top-bar a img {
+      width: 14px;
+      height: 16px; }
 
 body {
   font-family: "Open Sans", sans-serif; }
