@@ -1,0 +1,87 @@
+/*phone, portrait view, one column*/
+.footer {
+  box-sizing: border-box;
+  height: 259px;
+  padding: 3%;
+  background-color: #303030;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $font;
+  font-size: 14px;
+  > svg {
+    width: 80vw;
+    &:hover {
+      box-shadow: 1px 1px 5px #999999;
+    }
+    &:active {
+      box-shadow: 1px 1px 5px #03a6f2;
+    }
+  }
+  span {
+    text-align: center;
+    color: #999999;
+  }
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 3px;
+    &:hover {
+      color: #03a6f2; 
+    }
+    &:active {
+      box-shadow: 1px 1px 5px #03a6f2;
+    }
+.footer-media {
+  a {
+    margin-right: 15px;
+    text-decoration: none;
+  }
+}
+
+/*tablet, landscape view*/
+@media screen and (min-width: 600px) {
+  .footer {
+    padding: 45px 8.1% 60px 8.1%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    span {
+      align-self: center;
+      margin-left: auto;
+      width: 42vw;
+      text-align: right;
+    }
+  }
+  .footer-bar {
+    width: 90vw;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 900px) {
+    .footer {
+      > svg {
+        width: 283px;
+        height: 41px;
+      }
+      a {
+        white-space: nowrap;
+        margin-left: 3%;
+      }
+    .footer-bar {
+      margin-left: auto;
+      flex-flow: row nowrap;
+      align-content: space-around;
+      width: 50vw;
+    }
+}
