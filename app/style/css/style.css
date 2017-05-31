@@ -328,7 +328,10 @@ div.half2 {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
+
   font-family: "Open Sans", sans-serif;
+
+  
   font-size: 14px; }
   .footer > svg {
     width: 80vw; }
@@ -349,6 +352,7 @@ div.half2 {
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 3px; }
+
   .footer-bar:hover {
     color: #03a6f2; }
   .footer-bar:active {
@@ -356,6 +360,16 @@ div.half2 {
   .footer-bar .footer-media a {
     margin-right: 15px;
     text-decoration: none; }
+
+    .footer-bar a:hover {
+      color: #03a6f2; }
+    .footer-bar a:active {
+      box-shadow: 1px 1px 5px #03a6f2; }
+
+.footer-media a {
+  margin-right: 15px;
+  text-decoration: none; }
+
 
 /*tablet, landscape view*/
 @media screen and (min-width: 600px) {
