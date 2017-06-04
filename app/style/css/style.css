@@ -56,17 +56,14 @@ table {
   margin-left: 115px;
   margin-right: 117px; }
   .Recent_Blog .titl {
-    width: 391px;
     height: 45px;
     font-family: "Open Sans", sans-serif;
     font-size: 45px;
     font-weight: bold;
-    line-height: 1.04;
     text-align: left;
     color: #284a6f;
-    margin-left: 423px;
     margin-bottom: 80px;
-    margin-right: 508px; }
+    text-align: center; }
   .Recent_Blog .picture {
     display: flex;
     justify-content: space-between;
@@ -77,7 +74,6 @@ table {
       .Recent_Blog .picture .first .text1 {
         margin-top: 45px;
         margin-bottom: 30px;
-        width: 325px;
         height: 17px;
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
@@ -194,8 +190,10 @@ div.topnav {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  font-size: 14px; }
+  font-size: 14px;
+  height: 91px; }
 
 ul {
   list-style: none; }
@@ -257,28 +255,42 @@ div.mobapp {
   background: url(../img/worldmap-transp.png) center repeat-x, url(../img/worldmap-dots2.png) right no-repeat;
   display: flex;
   flex-direction: row;
-  padding-left: 8%; }
+  padding-left: 8%;
+  padding-top: 25px; }
 
 div.half1 {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  width: 50%;
-  border: 1px solid grey; }
+  justify-content: center;
+  width: 50%; }
 
 h1.h1 {
   font-size: 36px;
   font-weight: bold;
   line-height: 1.04;
   text-align: left;
-  color: #284a6f; }
+  color: #284a6f;
+  margin-bottom: 10px; }
 
-.content {
+.acontent {
   max-width: 485px;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
   color: #999999; }
+
+.aflex {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 40px; }
+
+div.mobile1 {
+  padding-right: 25px;
+  border-right: 1px solid #999999;
+  margin-right: 10px; }
+
+div.mobile1:last-child {
+  border: 0; }
 
 .bigdata {
   font-size: 36px;
@@ -286,25 +298,8 @@ h1.h1 {
   text-align: left;
   color: #0099ff; }
 
-.aflex {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-top: 40px; }
-
-div.mobile1 {
-  padding-right: 25px;
-  border-right: 1px solid #999999; }
-
-div.mobile2 {
-  padding-left: 25px; }
-
-div.appstore {
+div.aicons {
   padding-right: 35px;
-  font-weight: bold;
-  font-size: 14px; }
-
-div.playmarket {
   font-weight: bold;
   font-size: 14px; }
 
@@ -317,6 +312,29 @@ div.half2 {
   justify-content: center;
   align-content: center;
   width: 50%; }
+
+.statist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+div.mobile2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 0 25px 0 0;
+  border-right: 1px solid #999999;
+  margin: 20px 10px 20px 0; }
+
+div.mobile2:last-child {
+  border: 0; }
+
+div.astart {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 20px; }
 
 /*phone, portrait view, one column*/
 .footer {
@@ -411,25 +429,19 @@ body {
   display: flex;
   justify-content: space-around;
   width: 1402px;
-  height: 50px; }
+  margin-bottom: 50px; }
 
 .Ellipse11 {
   width: 79px;
-  height: 79px;
-  background-color: #0099ff;
-  border: solid 2px #0099ff; }
+  height: 79px; }
 
 .Ellipse22 {
   width: 79px;
-  height: 79px;
-  background-color: #0099ff;
-  border: solid 2px #0099ff; }
+  height: 79px; }
 
 .Ellipse33 {
   width: 79px;
-  height: 79px;
-  background-color: #0099ff;
-  border: solid 2px #0099ff; }
+  height: 79px; }
 
 .GCS {
   display: flex;
@@ -474,7 +486,6 @@ body {
   height: 200px; }
 
 .Good-Customer-Service {
-  width: 276px;
   height: 18px;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
@@ -484,7 +495,6 @@ body {
   color: #284a6f; }
 
 .Targeted-Features {
-  width: 217px;
   height: 24px;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
@@ -494,7 +504,6 @@ body {
   color: #284a6f; }
 
 .Responsive {
-  width: 132px;
   height: 24px;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
@@ -524,15 +533,11 @@ body {
 
 .Ellipse44 {
   width: 79px;
-  height: 79px;
-  background-color: #0099ff;
-  border: solid 2px #0099ff; }
+  height: 79px; }
 
 .Ellipse55 {
   width: 79px;
-  height: 79px;
-  background-color: #0099ff;
-  border: solid 2px #0099ff; }
+  height: 79px; }
 
 .Parallax-Menu {
   width: 175px;
@@ -568,7 +573,5 @@ body {
   line-height: 2.94;
   text-align: left;
   color: #ffffff; }
-
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

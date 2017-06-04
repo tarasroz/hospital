@@ -9,17 +9,18 @@ width: 1170px;
 margin-left: 115px;
 margin-right: 117px;
  .titl {
-    width: 391px;
+    //width: 391px;
     height: 45px;
     font-family: $font;
     font-size: 45px;
     font-weight: bold;
-    line-height: 1.04;
+    //line-height: 1.04;
     text-align: left;
     color:$darkblue;
-    margin-left: 423px;
+    //margin-left: 423px;
     margin-bottom: 80px;
-    margin-right: 508px;
+    //margin-right: 508px;
+    text-align: center;
     }
 .picture{
         display: flex;
@@ -31,7 +32,7 @@ margin-right: 117px;
                  .text1{
                     margin-top: 45px;
                     margin-bottom: 30px;
-                    width: 325px;
+                    //width: 325px;
                     height: 17px;
                     font-family: $font;
                     font-size: 16px;
