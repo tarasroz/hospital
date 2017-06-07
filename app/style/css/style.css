@@ -19,6 +19,8 @@
     justify-content: space-between;
     align-items: center; }
     .Recent_Blog .picture .first {
+      box-shadow: 0px 3px 18px 0 rgba(0, 153, 255, 0.1);
+      background-color: #ffffff;
       height: 641px;
       width: 670px; }
       .Recent_Blog .picture .first .text1 {
@@ -47,7 +49,9 @@
             text-decoration: underline; }
     .Recent_Blog .picture .second {
       height: 641px;
-      width: 470px; }
+      width: 470px;
+      box-shadow: 0px 3px 18px 0 rgba(0, 153, 255, 0.1);
+      background-color: #ffffff; }
       .Recent_Blog .picture .second .text2 {
         margin-top: 37px;
         margin-bottom: 20px;
