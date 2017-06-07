@@ -1,22 +1,23 @@
 .top-bar {
-  width: 100%;
-  height: 52px;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
-  align-content: space-around;
-  background-color: #303030;
-  font-family: Arial;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: left;
-  padding: 0% 8.5%;
-  a {
+    height: 52px;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+    background-color: #303030;
+    padding: 2% 5% 2% 8.5%; 
+  
+    a {
     margin-right: 4.5%;
     color: #ffffff;
     text-decoration: none;
+    font-family: $font;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+      
     &:last-child {
       margin-left: auto;
     }
@@ -24,8 +25,11 @@
       color: #03a6f2;
     }
     &:active {
-      color: #ffffff;
-      background-color: #03a6f2;
+      box-shadow: 1px 1px 5px #03a6f2;
+    }
+    img {
+      width:14px; 
+      height:16px;
     }
   }
 }

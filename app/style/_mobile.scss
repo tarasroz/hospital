@@ -8,83 +8,107 @@ div.mobapp{
 	display: flex;
 	flex-direction: row;
 	padding-left: 8%;
+	padding-top: 25px;
 }
 
-div.half1{
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	width: 50%;
-	border: 1px solid grey;
-}
+	div.half1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		//border: 1px solid grey;
+	}
+
+		h1.h1{
+		  font-size: 36px;
+		  font-weight: bold;
+		  line-height: 1.04;
+		  text-align: left;
+		  color: $darkblue;
+		  margin-bottom: 10px;
+		}
+
+		.acontent{
+		  max-width: 485px;
+		  font-size: 16px;
+		  line-height: 1.5;
+		  text-align: left;
+		  color: $grey;
+
+		}
+
+		.aflex{
+		  display: flex;
+		  justify-content: flex-start;
+		  padding-top: 40px;
+		}
+
+		div.mobile1{
+			padding-right: 25px;
+			border-right: 1px solid $grey;
+			margin-right: 10px;
+
+		}
+
+		div.mobile1:last-child{
+			border: 0;
+		}
+
+		.bigdata{
+		  font-size: 36px;
+		  font-weight: bold;
+		  text-align: left;
+		  color: $azure;
+
+		}
+
+		div.aicons{
+			padding-right: 35px;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		img.icon{
+			vertical-align: middle;
+		}
 
 
-h1.h1{
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1.04;
-  text-align: left;
-  color: $darkblue;
-}
-
-.content{
-  max-width: 485px;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: left;
-  color: $grey;
-
-}
-
-.bigdata{
-  font-size: 36px;
-  font-weight: bold;
-  text-align: left;
-  color: $azure;
-
-}
-
-.aflex{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	padding-top: 40px;
-}
+	div.half2{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+		width: 50%;
+	}
 
 
-div.mobile1{
-	padding-right: 25px;
-	border-right: 1px solid $grey;
+		.statist{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
 
-}
+		}
 
-div.mobile2{
-	padding-left: 25px;
+		div.mobile2{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 20%;
+			padding: 0 25px 0 0;
+			border-right: 1px solid $grey;
+			margin: 20px 10px 20px 0;
 
+		}
 
-}
+		div.mobile2:last-child{
+			border: 0;
+		}
 
-div.appstore{
-	padding-right: 35px;
-	font-weight: bold;
-	font-size: 14px;
-}
-
-div.playmarket{
-	font-weight: bold;
-	font-size: 14px;
-}
-
-img.icon{
-	vertical-align: middle;
-}
-
-div.half2{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
-	width: 50%;
-}
+	div.astart{
+		display: flex;
+		justify-content: center;
+		height: 50px;
+		margin-bottom: 20px;	
+	}
 
 

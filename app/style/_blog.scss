@@ -1,5 +1,5 @@
-$font-stack: "OpenSans";
-$title_color: #284a6f;
+$font: 'Open Sans', sans-serif;
+$darkblue: #284a6f;
 @mixin link($color){
     color: $color;
     text-decoration:none;
@@ -14,19 +14,19 @@ $title_color: #284a6f;
 width: 1170px;
 margin-left: 115px;
 margin-right: 117px;
- .titl {
-//    @include look(391px,45px,bold,80px); 
+ .titl { 
     width: 391px;
     height: 45px;
-    font-family: $font-stack;
+    font-family: $font;
     font-size: 45px;
     font-weight: bold;
-    line-height: 1.04;
+//    line-height: 1.04;
     text-align: left;
-    color:$title_color;
+    color:$darkblue;
     margin-left: 423px;
     margin-bottom: 80px;
     margin-right: 508px;
+    text-align: center;
     }
 .picture{
         display: flex;
@@ -40,9 +40,9 @@ margin-right: 117px;
                  .text1{
                     margin-top: 45px;
                     margin-bottom: 30px;
-                    width: 325px;
+                    //width: 325px;
                     height: 17px;
-                    font-family: $font-stack;
+                    font-family: $font;
                     font-size: 16px;
                     font-weight: bold;
                     line-height: 2.94;
@@ -52,7 +52,7 @@ margin-right: 117px;
                 .text_girl{
                  width: 616px;
                  height: 65px;
-                 font-family: $font-stack;
+                 font-family: $font;
                  font-size: 16px;
                  line-height: 1.5;
                  text-align: left;
@@ -73,7 +73,7 @@ margin-right: 117px;
                 margin-bottom: 20px;
                   width: 280px;
                   height: 17px;
-                  font-family: $font-stack;
+                  font-family: $font;
                   font-size: 16px;
                   font-weight: bold;
                   line-height: 1.5;
@@ -84,7 +84,7 @@ margin-right: 117px;
              .text_pen{
                 width: 372px;
                 height: 41px;
-                font-family: $font-stack;
+                font-family: $font;
                 font-size: 16px;
                 line-height: 1.5;
                 text-align: left;
@@ -98,7 +98,7 @@ margin-right: 117px;
               .text_guys{
                  width: 392px;
                  height: 17px;
-                 font-family: $font-stack;
+                 font-family: $font;
                  font-size: 16px;
                  line-height: 1.5;
                  text-align: left;
