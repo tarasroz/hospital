@@ -30,8 +30,10 @@ div.topnav {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   font-size: 14px;
+  height: 91px;
 
 }
 
@@ -80,6 +82,9 @@ button.button:hover{
   font-size: 18px;
   font-weight: bold;
   color: $logoazure;
+  text-align: center;
+  border: 1px solid grey;
+
 }
 
 .text-style-1 {
