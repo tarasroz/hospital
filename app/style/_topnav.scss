@@ -26,14 +26,31 @@ body{
 
 }
 
-div.topnav {
+a.arrow{
+  color: $azure;
+  width: 43px;
+  height: 43px;
+  border-radius: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgba(40, 74, 111, 0.27);
+}
+
+a.arrow:hover{
+    box-shadow: none;
+}
+
+
+div.topnav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   font-size: 14px;
   height: 91px;
+  padding-left: 8%;
 
 }
 
@@ -46,6 +63,25 @@ ul li{
   padding: 0 12px;
   font-weight: bold;
   color: $azure;
+}
+
+ul.submenu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+.thin{
+  font-weight: normal;
+}
+
+}
+
+#submenu{
+    visibility: hidden;
+}
+
+ul.submenu li{
+    border-bottom: 1px solid lightgrey;
 }
 
 a{
@@ -83,8 +119,6 @@ button.button:hover{
   font-weight: bold;
   color: $logoazure;
   text-align: center;
-  border: 1px solid grey;
-
 }
 
 .text-style-1 {

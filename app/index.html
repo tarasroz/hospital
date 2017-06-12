@@ -8,9 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <!--<link rel="stylesheet" href="style/css/normalize.css">-->
   <title>Buffalo Bisons</title>
+
+  <script type="text/javascript">
+    function amenu() { 
+      if (document.getElementById('submenu').style.visibility === 'hidden') { 
+        document.getElementById('submenu').style.visibility = 'visible'; } 
+      else { 
+        document.getElementById('submenu').style.visibility = 'hidden'; 
+            }}
+  </script>
+
 </head>
 
 <body>
+
 
   <!--Top Bar-->
   <section>
@@ -34,15 +45,29 @@
       <div class="companyName">Company<span class="text-style-1">Name</span></div>
 
     </div>
-    <ul class="upper ulflex">
-      <li><a href="#">Products &#8744</a></li>
+    <div>
+      <ul class="upper ulflex">
+      <li><a href="#" onclick="amenu()">Products <span class="thin"> &#8744</span></a>
+        <ul class="submenu" id="submenu">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+        </ul>
+
+      </li>
       <li><a href="#">Actions</a></li>
       <li><a href="#">Featured</a></li>
       <li><a href="#">Recommended</a></li>
       <li><a href="#">Reviews</a></li>
       <li><a href="#">Contact us</a></li>
-      <li><button class="upper whitetext button">Pricing</button></li>
     </ul>
+    </div>
+
+    <div>
+      <button class="upper whitetext button">Pricing</button>
+    </div>
+
+
 
   </div>
 </section>
@@ -146,7 +171,9 @@
     </div>
 
     <div class="half2">
-      <img src="img/iPhone6.png">
+      <a href="#" class="arrow"><</a>
+      <div class="iphone"><img src="img/iPhone6.png"></div>
+      <a href="#" class="arrow">></a>
     </div>
   </div>
 
@@ -299,6 +326,7 @@
         </nav>
         <span>Company Name 2017 <span>© All rights reserved.
     </section>
+
 </body>
 
 
