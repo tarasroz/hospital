@@ -1,0 +1,59 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+
+
+
+
+.flex-container {    
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    font-family: OpenSans;
+    text-align: center;    
+}
+.flex1 {
+    display: flex;    
+}
+.box {
+    box-sizing: border-box;
+    border-right: 1px solid #ececec;
+    width: 24vw;
+}
+.box:first-child {
+    padding-left: 50px;
+}
+.box:last-child {
+    padding-right: 50px;
+    border: none;
+}
+.numbers {
+    font-size: 45px;
+    font-weight: bold;
+    color: #0099ff;
+}
+.text {
+    font-size: 16px;
+    color: #999999;
+}
+.button {
+    margin: 85px;
+    border-radius: 25px;
+    background-color: #00d664;
+    padding: 22px 57px;
+    
+}
+.button p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fefefe;   
+}
