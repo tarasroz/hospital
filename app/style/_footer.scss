@@ -1,3 +1,6 @@
+/* Footer section*/
+$warm-grey-two: #999999;
+
 /*phone, portrait view, one column*/
 .footer {
   box-sizing: border-box;
@@ -13,7 +16,7 @@
   > svg {
     width: 80vw;
     &:hover {
-      box-shadow: 1px 1px 5px #999999;
+      box-shadow: 1px 1px 5px $warm-grey-two;
     }
     &:active {
       box-shadow: 1px 1px 5px #03a6f2;
@@ -21,7 +24,8 @@
   }
   span {
     text-align: center;
-    color: #999999;
+    color: $warm-grey-two;
+    font-size: 10px;
   }
 }
 
@@ -31,7 +35,7 @@
   justify-content: space-around;
   align-items: center;
   a {
-    color: #ffffff;
+    color: #FFF;
     text-decoration: none;
     margin-bottom: 3px;
     &:hover {
@@ -45,7 +49,11 @@
 .footer-media {
   a {
     margin-right: 15px;
+    border-radius: 50%;
     text-decoration: none;
+    &:hover {
+      background: $warm-grey-two;  
+    }
   }
 }
 
@@ -60,6 +68,7 @@
       margin-left: auto;
       width: 42vw;
       text-align: right;
+      font-size: 14px;
     }
   }
   .footer-bar {
@@ -71,20 +80,20 @@
 
 /*laptop and desktop*/
 @media screen and (min-width: 900px) {
-    .footer {
-      > svg {
-        width: 283px;
-        height: 41px;
-      }
-      a {
-        white-space: nowrap;
-        margin-left: 3%;
-      }
+  .footer {
+    > svg {
+      width: 283px;
+      height: 41px;
+    }
     .footer-bar {
       margin-left: auto;
       flex-flow: row nowrap;
       align-content: space-around;
       width: 50vw;
+      a {
+        white-space: nowrap;
+        margin-left: 3%;
+      }
     }
   }
 }
