@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="style/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+<!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+
   <!--<link rel="stylesheet" href="style/css/normalize.css">-->
   <title>Buffalo Bisons</title>
 
@@ -17,13 +21,48 @@
         document.getElementById('submenu').style.visibility = 'hidden'; 
             }}
   </script>
+    
+    <!-- Style wasn't supposed to be here, but for now it's only way for it to work correctly.-->
+  <style type="text/css">
+    
+    .first-banner-slide {
+      background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.5)) no-repeat border-box, url('img/layer1.png') no-repeat right top;
+      background-size: auto 65vw
+    }
+    .second-banner-slide {
+      background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.5)) no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
+      background-size: auto 65vw 
+    }
+    /*tablet, landscape view*/
+    @media screen and (min-width: 600px) {
+      .first-banner-slide {
+      background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.2)) no-repeat border-box, url('img/layer1.png') no-repeat right top;
+      background-size: auto 50vw
+      }
+      .second-banner-slide {
+        background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.2)) no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
+        background-size: auto 50vw 
+      }
+    }
+    /*laptop and desktop*/
+    @media screen and (min-width: 900px) {
+      .first-banner-slide {
+        background: url('img/worldmap-dots3.png') no-repeat border-box, url('./img/layer1.png') no-repeat right top; 
+        background-size: auto 35vw
+      }
+      .second-banner-slide {
+        background: url('img/worldmap-dots3.png') no-repeat border-box, url('./img/layer2.jpg') no-repeat right top;
+        background-size: auto 35vw
+      }
+    }
+  </style>
 
 </head>
 
 <body>
 
 
-  <!--Top Bar-->
+  <!--Top Bar by V.V.-->
   <section>
     <nav class="top-bar">
       <a href="#" title="BLOG">BLOG</a>
@@ -71,6 +110,34 @@
 
   </div>
 </section>
+
+<!-- Banner Slider by V.V. -->
+<section>
+  <div class="owl-carousel banner-slider">
+    <div class="item first-banner-slide">
+      <div class="banner-text">
+        Universal Landing Page Template, made by UX ENERGY, helps you to make a perfect website quickly 
+        <span>and for freee!</span>
+      </div>
+      <div class="banner-link">
+        WANT TO LEARN MORE?
+        <span><a href="#"> LEARN MORE &#62</a></span>
+      </div>
+    </div>
+    
+    <div class="item second-banner-slide">
+      <div class="banner-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit! 
+        <span>and for freee!</span>
+      </div>
+      <div class="banner-link">
+        WANT TO LEARN MORE?
+        <span><a href="#"> LEARN MORE &#62</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!--Our Features /by SS-->
 <div class="Background">
@@ -292,7 +359,7 @@
     </div>
   </div>
 
-  <!--Footer-->
+  <!--Footer by V.V.-->
     <section class="footer">
         
             <a title="" href="#" target="_top" title="footer-logo">
@@ -372,6 +439,25 @@
         </nav>
         <span>Company Name 2017 <span>© All rights reserved.
     </section>
+
+<!-- Owl scripts-->
+  <script src="owlcarousel/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".banner-slider").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        items: 1,
+        navText: [
+          "<img src='img/str-left.svg'/>",
+          "<img src='img/str-right.svg'/>"
+        ],
+        autoplay: false,
+      });
+    });
+  </script>
 
 </body>
 
