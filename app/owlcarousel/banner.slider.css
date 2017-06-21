@@ -1,0 +1,30 @@
+#bannerSlide1 {
+      background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.5)) no-repeat border-box, url('img/layer1.jpg') no-repeat right top;
+      background-size: auto 65vw
+    }
+    #bannerSlide2 {
+      background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.5)) no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
+      background-size: auto 65vw 
+    }
+    /*tablet, landscape view*/
+    @media screen and (min-width: 600px) {
+      #bannerSlide1 {
+      background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.2)) no-repeat border-box, url('img/layer1.jpg') no-repeat right top;
+      background-size: auto 50vw
+      }
+      #bannerSlide2 {
+        background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.2)) no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
+        background-size: auto 50vw 
+      }
+    }
+    /*laptop and desktop*/
+    @media screen and (min-width: 900px) {
+      #bannerSlide1 {
+        background: url('img/worldmap-dots3.png') no-repeat border-box, url('img/layer1.png') no-repeat right top; 
+        background-size: auto 35vw
+      }
+      #bannerSlide2 {
+        background: url('img/worldmap-dots3.png') no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
+        background-size: auto 35vw
+      }
+    }

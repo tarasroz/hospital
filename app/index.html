@@ -6,10 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="style/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-<!-- Owl Stylesheets -->
+  <!-- Owl Stylesheets -->
   <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-
+  <!-- Doesn't work((( 
+    <link rel="stylesheet" href="owlcarousel/banner.slider.css">
+-->
+    
   <!--<link rel="stylesheet" href="style/css/normalize.css">-->
   <title>Buffalo Bisons</title>
 
@@ -24,37 +30,37 @@
     
     <!-- Style wasn't supposed to be here, but for now it's only way for it to work correctly.-->
   <style type="text/css">
-    
-    .first-banner-slide {
+    #bannerSlide1 {
       background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.5)) no-repeat border-box, url('img/layer1.jpg') no-repeat right top;
       background-size: auto 65vw
     }
-    .second-banner-slide {
+    #bannerSlide2 {
       background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.5)) no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
       background-size: auto 65vw 
     }
     /*tablet, landscape view*/
     @media screen and (min-width: 600px) {
-      .first-banner-slide {
+      #bannerSlide1 {
       background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.2)) no-repeat border-box, url('img/layer1.jpg') no-repeat right top;
       background-size: auto 50vw
       }
-      .second-banner-slide {
+      #bannerSlide2 {
         background: linear-gradient(to right, rgba(3,166,242,1), rgba(3,166,242,0.2)) no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
         background-size: auto 50vw 
       }
     }
     /*laptop and desktop*/
     @media screen and (min-width: 900px) {
-      .first-banner-slide {
+      #bannerSlide1 {
         background: url('img/worldmap-dots3.png') no-repeat border-box, url('img/layer1.png') no-repeat right top; 
         background-size: auto 35vw
       }
-      .second-banner-slide {
+      #bannerSlide2 {
         background: url('img/worldmap-dots3.png') no-repeat border-box, url('img/layer2.jpg') no-repeat right top;
         background-size: auto 35vw
       }
     }
+    
   </style>
 
 </head>
@@ -63,18 +69,17 @@
 
 
   <!--Top Bar by V.V.-->
-  <section>
-    <nav class="top-bar">
-      <a href="#" title="BLOG">BLOG</a>
-      <a href="#" title="FAQ">FAQ</a>
-      <a href="#" title="OUR TEAM">OUR TEAM</a>
-      <a href="#" title="WHO ARE WE?">WHO ARE WE?</a>
-      <a href="#" title="PORTFOLIO">PORTFOLIO</a>
-      <a href="#" title="TESTIMONIALS">TESTIMONIALS</a>
-      <a href="#" title="LOG IN"><img src="img/padlock.png" aria-hidden="true" />LOG IN</a>
-    </nav>
-  </section>
-
+  <div id="topbar">
+    <ul>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Who are we?</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#"><i class="fa fa-lock"></i>&nbsp;Log in</a></li>
+    </ul>
+  </div>
 
   <!--Navigation bar /by Artem H.-->
 <section>
@@ -112,32 +117,28 @@
 </section>
 
 <!-- Banner Slider by V.V. -->
-<section>
-  <div class="owl-carousel banner-slider">
-    <div class="item first-banner-slide">
-      <div class="banner-text">
-        Universal Landing Page Template, made by UX ENERGY, helps you to make a perfect website quickly 
-        <span>and for freee!</span>
-      </div>
-      <div class="banner-link">
-        WANT TO LEARN MORE?
-        <span><a href="#"> LEARN MORE &#62</a></span>
-      </div>
-    </div>
-    
-    <div class="item second-banner-slide">
-      <div class="banner-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit! 
-        <span>and for freee!</span>
-      </div>
-      <div class="banner-link">
-        WANT TO LEARN MORE?
-        <span><a href="#"> LEARN MORE &#62</a></span>
-      </div>
-    </div>
+<div class="owl-carousel" id="banner">
+  <div class="item" id="bannerSlide1">
+    <p>
+      Universal Landing Page Template, made by UX ENERGY, helps you to make a perfect website quickly 
+      <span>and for freee!</span>
+    </p>
+    <p>
+      WANT TO LEARN MORE?
+      <a href="#"> LEARN MORE &#62</a>
+    </p>
   </div>
-</section>
-
+  <div class="item" id="bannerSlide2">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit! 
+      <span>and for freee!</span>
+    </p>
+    <p>
+      WANT TO LEARN MORE?
+      <a href="#"> LEARN MORE &#62</a>
+    </p>
+  </div>
+</div>
 
 <!--Our Features /by SS-->
 <div class="Background">
@@ -360,49 +361,48 @@
   </div>
 
     <!--Footer by V.V.-->
-    <section class="footer">
-      <a href="#" target="_top" title="Logo">
-        <img src="img/CompanyName-copy.svg"/>
-      </a>
-      <nav class="footer-bar">   
-        <a href="#">Reviews</a>
-        <a href="#">Products</a>
-        <a href="#">Contact us</a>
-        <a href="#">Why Us</a>
-        <a href="#">FAQ</a>
-        <a href="#">Our team</a>
-        <a href="#">Blog</a>
-      </nav>
-      <nav class="footer-media">
-        <a href="https://www.instagram.com/buffalo-bisons" target="_blank">
-          <img src="img/instagram.svg"/>
-        </a>
-        <a href="https://twitter.com/buffalo-bisons" target="_blank">
-          <img src="img/twitter.svg"/>
-        </a>
-        <a href="https://www.facebook.com/buffalo-bisons/" target="_blank">
-          <img src="img/facebook.svg"/>
-        </a>
-        <a href="https://www.youtube.com/user/buffalo-bisons" target="_blank">
-          <img src="img/youtube.svg"/>
-        </a>
-      </nav>
-      <span>Company Name 2017 <span>© All rights reserved.
-    </section>
+    <footer>
+      <ul id="footer-bar">
+        <li><a href="#" target="_top" title="Logo">
+          <img src="img/CompanyName-copy.png"/></a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Why Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <ul id="social-media">
+        <li><a href="https://www.instagram.com/buffalo-bisons" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a></li>
+        <li><a href="https://twitter.com/buffalo-bisons" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a></li>
+        <li><a href="https://www.facebook.com/buffalo-bisons/" target="_blank">
+          <i class="fa fa-facebook"></i>
+        </a></li>
+        <li><a href="https://www.youtube.com/user/buffalo-bisons" target="_blank">
+          <i class="fa fa-youtube-play"></i>
+        </a></li>
+      </ul>
+      <p>Company Name 2017 © All rights reserved.</p>
+    </footer>
 
     <!-- Owl scripts-->
     <script src="owlcarousel/jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function(){
-        $(".banner-slider").owlCarousel({
+        $("#banner").owlCarousel({
           loop: true,
           nav: true,
           dots: false,
           items: 1,
           navText: [
-            "<img src='img/str-left.svg'/>",
-            "<img src='img/str-right.svg'/>"
+            "<i class='fa fa-angle-left'></i>",
+            "<i class='fa fa-angle-right'></i>"
           ],
           autoplay: false,
         });
