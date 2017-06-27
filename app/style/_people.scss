@@ -1,8 +1,4 @@
-h4 {
-  
-}
-
-.Background {
+.ground {
   width: 1170px;
   margin-left: 115px;
   margin-right: 117px;
@@ -11,7 +7,7 @@ h4 {
   justify-content: center;
   }
 
-.see {
+.title {
   font-family: OpenSans;
   font-size: 3.5vw;
   font-weight: bold;
@@ -19,21 +15,19 @@ h4 {
   text-align: center;
   color: #284a6f;
   /*color: var(--dark-slate-blue);*/
- 
   }
 
 .main {
-
-display: flex;
-justify-content: center; 
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 640px) {
     display: flex;
     flex-flow: column wrap;
   }
 }
 
-.hover {
+.video {
   width: 58.3vw;
   height: 89vh;
   opacity: 0.65;
@@ -41,7 +35,7 @@ align-items: center;
   /*background-color: var(--azure);*/
  }
 
-.text {
+.banner {
   width: 41.7vw;
   height: 50vh;
   margin-top: 41px;
@@ -55,7 +49,7 @@ align-items: center;
   align-items: left;
 }
 
-.laura {
+.text {
   width: 33.3vw;
   font-family: OpenSans;
   font-size: 16px;
